@@ -42,6 +42,7 @@ async def voorspel(interaction: discord.Interaction, wedstrijd: str):
         antwoord = f"Er ging iets mis met de AI-voorspelling: {e}"
 
     await interaction.followup.send(f"**Voorspelling voor:** {wedstrijd}
+
 {antwoord}")
 
 bot.run(TOKEN)
